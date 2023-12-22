@@ -1,5 +1,7 @@
 # FEWD-CA-3_DhabaHub
 https://abhishekkaundal0052.github.io/FEWD-CA-3_DhabaHub/
+
+
 Welcome to DhabaHub – your one-stop destination for culinary inspiration! Our website is a food lover's paradise, offering a delightful experience for users to explore and discover a wide variety of mouthwatering recipes. Powered by a dynamic API, our platform allows users to effortlessly search for their favorite dishes, explore new culinary creations, and embark on a gastronomic journey like never before.
 
 With an intuitive and user-friendly interface, DhabaHub makes it easy for users to find the perfect recipe for any occasion. Whether you're a seasoned chef or a kitchen novice, our website caters to all levels of expertise. The robust API integration ensures that our recipe database is constantly updated with the latest and greatest culinary delights.
