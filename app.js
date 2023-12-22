@@ -62,9 +62,9 @@ document.addEventListener('click', function (event) {
         result.style.filter = "blur(4px)";
         title.style.filter = "blur(4px)";
         body.style.backdropFilter = "blur(4px)";
-        recipe.style.top = "10%";
+        recipe.style.top = "15%";
         close1.style.display = "flex";
-        close1.style.top = "7%";
+        close1.style.top = "12%";
     }
 });
 

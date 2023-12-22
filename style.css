@@ -197,7 +197,7 @@ input {
     background-color: #ff9900;
     border: 2px solid white;
     border-radius: 10px;
-    top: 25%;
+    top: 27%;
     left: 82%;
     z-index: 7;
     cursor: pointer;
@@ -292,6 +292,7 @@ input {
         font-size: 4vw;
         left: 75%;
         height: 5vh;
+        top: 15%
     }
 }
 
