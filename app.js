@@ -14,6 +14,7 @@ home.addEventListener('click', function () {
     body.style.backdropFilter = "blur(0px)"
     descr.style.filter = "blur(0px)";
     close1.style.display = "none";
+
 })
 
 function showResult(input) { // to show the searched results
@@ -29,13 +30,16 @@ function showResult(input) { // to show the searched results
             meals.forEach((many) => {
                 rest += `
             <div class="element">
-            <img src ="${many.strMealThumb}" id="grid" alt"error">
+            <img src ="${many.strMealThumb}" class="grid" id="${many.idMeal} alt"error">
             <br>
             <br>
             <p class= "names1"> ${many.strMeal}</p>
             </div>`
                 result.innerHTML = rest;
-            })
+    // function getRecipe(meal) {
+    //                 fetch('https://www.themealdb.com/api/json/v1/1/lookup.php?i=52772')
+    //                     .then()}
+    //         })
         })
         .catch((error) => {
             title.innerText = "No matching results found..."
@@ -47,11 +51,9 @@ function showResult(input) { // to show the searched results
             console.log(error);
         })
 
-}
+}    
+)}
 
-// function getRecipe() {
-//     fetch('https://www.themealdb.com/api/json/v1/1/lookup.php?i=52772')
-// }
 
 let names1 = document.getElementsByClassName('names1')
 document.addEventListener('click', function (event) {
@@ -68,7 +70,7 @@ document.addEventListener('click', function (event) {
 
 let names = document.querySelector('.name');
 document.getElementById('sbutton').addEventListener('click', function () {
-    let input = document.querySelector('#result').value;
+    var input = document.querySelector('#result').value;
     if (input.trim() === "") {
         alert("Please enter a dish.");
     }
@@ -93,8 +95,7 @@ random.addEventListener('click', function () {
     descr.style.filter = "blur(4px)";
     body.style.backdropFilter = "blur(4px)";
     close1.style.display = "flex";
-    console.log('hii');
-    body.style.overflow = "hidden";
+    // body.style.overflow = "hidden";
 
 });
 
@@ -104,8 +105,8 @@ function getData() { // random meal on page
             return res.json();
         })
         .then((real) => {
-            const meal1 = real.meals;
-            meal1.forEach((meal) => {
+            const meal = real.meals[0];
+            
                 random.innerHTML += `
                 <img src="${meal.strMealThumb}" id="randomImg" class="img" alt="error">
                 <br><br>
@@ -123,7 +124,6 @@ function getData() { // random meal on page
             <br>
             ${meal.strInstructions}`;
                 }
-            })
         })
         .catch((error) => {
             console.error('Error fetching data:', error);
