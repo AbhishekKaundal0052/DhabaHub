@@ -55,16 +55,16 @@ function showResult(input) { // to show the searched results
 )}
 
 
-let names1 = document.getElementsByClassName('names1')
+let grid = document.getElementsByClassName('grid')
 document.addEventListener('click', function (event) {
-    if (event.target.classList.contains('names1')) {
+    if (event.target.classList.contains('grid')) {
         recipe.style.display = "flex";
         result.style.filter = "blur(4px)";
         title.style.filter = "blur(4px)";
         body.style.backdropFilter = "blur(4px)";
-        recipe.style.top = "30%";
+        recipe.style.top = "10%";
         close1.style.display = "flex";
-        close1.style.top = "27%"
+        close1.style.top = "7%";
     }
 });
 
@@ -94,7 +94,9 @@ random.addEventListener('click', function () {
     recipe.style.display = "flex";
     descr.style.filter = "blur(4px)";
     body.style.backdropFilter = "blur(4px)";
+    recipe.style.top = "45%";
     close1.style.display = "flex";
+    close1.style.top = "37%"
     // body.style.overflow = "hidden";
 
 });

@@ -304,9 +304,10 @@ input {
         width: 79vw;
         height: 35vh;
         margin-left: 8vw;
+        margin-bottom: 5vh;
     }
 
     .names1 {
-        font-size: 6vw;
+        font-size: 3vw;
     }
 }
