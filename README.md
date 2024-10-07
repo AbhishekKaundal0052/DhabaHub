@@ -8,6 +8,6 @@ Join us in celebrating the art of cooking and the joy of savoring delicious meal
 # Features
 Whether you're feeling adventurous and want to try something new or you're simply looking for inspiration, our Random Recipe Generator is your ticket to culinary serendipity. It's a delightful way to discover hidden gems and broaden your palate by exploring diverse cuisines and flavors.
 
-Live Link: [DhabaHub](https://abhishekkaundal0052.github.io/FEWD-CA-3_DhabaHub/)
+Live Link: [DhabaHub](https://abhishekkaundal0052.github.io/DhabaHub/)
 
 
